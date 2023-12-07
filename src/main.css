@@ -1,0 +1,16 @@
+body {
+  background-color: antiquewhite;
+}
+
+.card {
+  width: 500px;
+  border: 1px solid;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
