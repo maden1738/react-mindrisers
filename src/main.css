@@ -14,3 +14,7 @@ body {
   font-weight: bold;
   font-size: 2rem;
 }
+
+img {
+  border-radius: 50%;
+}
