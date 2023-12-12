@@ -1,3 +1,6 @@
+import EditButton from "./EditButton";
+
+import DefaultButton, { ViewButton, RemoveButton } from "./Buttons"; // importing defaulot export Button as DefaultButton
 function Course(props) {
   // { props: {data:course:title:""}} }
   return (
@@ -6,6 +9,10 @@ function Course(props) {
       {/* optional chaining */}
       <p>price: Rs.{props.data?.course.price}</p>
       <p>duration: {props.data?.course.duration}</p>
+      <ViewButton />
+      <EditButton />
+      <RemoveButton />
+      <DefaultButton />
       <hr />
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vitae ipsum
       a. Dolorum voluptatum consequuntur, dolorem placeat, fugit consectetur

@@ -1,5 +1,8 @@
 import Course from "./components/Course.jsx";
 import User from "./components/User.jsx";
+import Glass from "./assets/images/reacticon.png";
+import EditButton from "./components/EditButton.jsx";
+import DeleteButton from "./components/DeleteButton.jsx";
 
 let cards = ["react", "node", "git"];
 let reactData = {
@@ -18,6 +21,8 @@ function App() {
   return (
     <div>
       <h2>Our Courses ({cards.length})</h2>
+      <img src={Glass} alt="" width="60px" />
+      <img src="/vite.svg" alt="" width="60px" />
       <Course data={reactData} />;
       <Course data={nodeData} />
       <Course />
@@ -27,6 +32,31 @@ function App() {
         <User />
         <User />
       </div>
+      <table>
+        <tr>
+          <th>name</th>
+          <th>email</th>
+          <th>action</th>
+        </tr>
+        <tr>
+          <td>xyz</td>
+          <td>xyz@.com</td>
+          <td>
+            <EditButton />
+            <DeleteButton />
+          </td>
+        </tr>
+        <tr>
+          <td>xyz</td>
+          <td>xyz@.com</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>xyz</td>
+          <td>xyz@.com</td>
+          <td></td>
+        </tr>
+      </table>
     </div>
   );
 }
