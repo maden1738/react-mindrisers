@@ -5,10 +5,11 @@ function Course(props) {
   // { props: {data:course:title:""}} }
   return (
     <div className="card">
-      <p className="title">{props.data?.course.title}</p>{" "}
+      {/* <p className="title">{props.data?.course.title}</p> */}
       {/* optional chaining */}
-      <p>price: Rs.{props.data?.course.price}</p>
-      <p>duration: {props.data?.course.duration}</p>
+      {/* <p>price: Rs.{props.data?.course.price}</p>
+      <p>duration: {props.data?.course.duration}</p> */}
+      <p className="title">{props.title}</p>
       <ViewButton />
       <EditButton />
       <RemoveButton />

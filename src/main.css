@@ -28,3 +28,7 @@ td {
   border: 1px solid;
   padding: 5px;
 }
+
+thead {
+  background-color: cadetblue;
+}
