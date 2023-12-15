@@ -4,6 +4,7 @@ import Glass from "./assets/images/reacticon.png";
 import EditButton from "./components/EditButton.jsx";
 import DeleteButton from "./components/DeleteButton.jsx";
 import Todos from "./components/Todos.jsx";
+import Counter from "./components/Counter.jsx";
 
 let cards = ["react", "node", "git"];
 // let reactData = {
@@ -31,6 +32,7 @@ let courses = ["react", "tailwind"];
 function App() {
   return (
     <div>
+      <Counter />
       <Todos />
       <hr />
       <h2>Our Courses ({cards.length})</h2>
