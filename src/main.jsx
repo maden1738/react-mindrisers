@@ -5,11 +5,13 @@ import "./index.css"; // tailwind css
 import App from "./App";
 import Counter from "./components/Counter";
 import GoogleTabs from "./GoogleTabs";
+import ApiUserList from "./ApiUsersList";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <GoogleTabs />
-    <Counter />
+    <ApiUserList />
+    {/* <GoogleTabs /> */}
+    {/* <Counter /> */}
     {/* <App /> */}
   </React.StrictMode>
 );
