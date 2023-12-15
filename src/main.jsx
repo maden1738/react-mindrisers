@@ -6,10 +6,12 @@ import App from "./App";
 import Counter from "./components/Counter";
 import GoogleTabs from "./GoogleTabs";
 import ApiUserList from "./ApiUsersList";
+import TodosList from "./components/TodosList";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ApiUserList />
+    <TodosList />
+    {/* <ApiUserList /> */}
     {/* <GoogleTabs /> */}
     {/* <Counter /> */}
     {/* <App /> */}
