@@ -28,7 +28,15 @@ const Todos = () => {
           {todos.map((el) => (
             <tr>
               <td>{el.title}</td>
-              <td>{el.status ? "completed" : "not completed"}</td>
+              <td
+                // style={{
+                //   background: el.status ? "green" : "red",
+                //   color: "white",
+                // }}
+                className={`capitalize ${el.status ? "bg-green" : "bg-red"}`} // more popular way
+              >
+                {el.status ? "completed" : "not completed"}
+              </td>
             </tr>
           ))}
         </tbody>

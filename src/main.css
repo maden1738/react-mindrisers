@@ -32,3 +32,16 @@ td {
 thead {
   background-color: cadetblue;
 }
+
+.bg-green {
+  background-color: green;
+  color: white;
+}
+.bg-red {
+  background-color: red;
+  color: white;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
