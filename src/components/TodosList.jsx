@@ -16,6 +16,13 @@ export default function TodosList() {
     setTodos(temp);
   };
 
+  const removeElement = (event) => {
+    let index = event.target.id;
+    let temp = [...todos];
+    temp.splice(index, 1);
+    setTodos(temp);
+  };
+
   return (
     <>
       <h1 className="text-5xl">Todos list</h1>
@@ -28,7 +35,7 @@ export default function TodosList() {
           className="border border-black ml-10 mr-4"
         />
         <select name="status" id="" className="border border-black">
-          <option value="complete">Completed</option>
+          <option value="completed">Completed</option>
           <option value="incomplete">Incomplete</option>
         </select>
         <button className="bg-gray-300 ml-5">Add to list</button>
@@ -46,7 +53,7 @@ export default function TodosList() {
           </tr>
         </thead>
         <tbody>
-          {todos.map((el) => (
+          {todos.map((el, index) => (
             <tr>
               <td className="border border-collapse border-black p-3">
                 {el.title}
@@ -57,6 +64,13 @@ export default function TodosList() {
                 }`}
               >
                 {el.status}
+                <button
+                  className="ml-5 bg-white p-1 rounded-lg"
+                  id={index}
+                  onClick={removeElement}
+                >
+                  Remove
+                </button>
               </td>
             </tr>
           ))}
