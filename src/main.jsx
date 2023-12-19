@@ -7,13 +7,15 @@ import Counter from "./components/Counter";
 import GoogleTabs from "./GoogleTabs";
 import ApiUserList from "./ApiUsersList";
 import TodosList from "./components/TodosList";
+import ApiComments from "./components/ApiComments";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <TodosList />
+    {/* <TodosList /> */}
     {/* <ApiUserList /> */}
     {/* <GoogleTabs /> */}
     {/* <Counter /> */}
     {/* <App /> */}
+    <ApiComments />
   </React.StrictMode>
 );

@@ -6,6 +6,7 @@ export default function TodosList() {
     { title: "css", status: "incomplete" },
   ]);
 
+  const [pageTitle, setPage] = useState("Todos");
   const handleFormSubmit = (e) => {
     e.preventDefault();
     let inputTitle = e.target.title.value;
@@ -21,13 +22,13 @@ export default function TodosList() {
     let temp = [...todos];
     temp.splice(index, 1);
     setTodos(temp);
+    // let remainingTodos = [...todos].filter((el, id) => id != index)
   };
 
   return (
     <>
       <h1 className="text-5xl">Todos list</h1>
       <hr className="my-5" />
-
       <form onSubmit={handleFormSubmit}>
         <input
           type="text"
@@ -40,7 +41,6 @@ export default function TodosList() {
         </select>
         <button className="bg-gray-300 ml-5">Add to list</button>
       </form>
-
       <table className="border border-black mx-10 my-5  ">
         <thead>
           <tr>
