@@ -9,6 +9,7 @@ import ApiUserList from "./ApiUsersList";
 import TodosList from "./components/TodosList";
 import ApiComments from "./components/ApiComments";
 import ApiImages from "./components/ApiImages";
+import ApiProductsAutoLoad from "./components/ApiProductsAutoLoad";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <Counter /> */}
     {/* <App /> */}
     {/* <ApiComments /> */}
-    <ApiImages />
+    {/* <ApiImages /> */}
+    <ApiProductsAutoLoad />
   </React.StrictMode>
 );
