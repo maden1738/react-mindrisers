@@ -8,6 +8,7 @@ import GoogleTabs from "./GoogleTabs";
 import ApiUserList from "./ApiUsersList";
 import TodosList from "./components/TodosList";
 import ApiComments from "./components/ApiComments";
+import ApiImages from "./components/ApiImages";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <GoogleTabs /> */}
     {/* <Counter /> */}
     {/* <App /> */}
-    <ApiComments />
+    {/* <ApiComments /> */}
+    <ApiImages />
   </React.StrictMode>
 );
